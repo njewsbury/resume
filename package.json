@@ -1,0 +1,23 @@
+{
+  "name": "nathan-resume",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prebuild:sass": "del-cli dist/css && mkdirp dist/css",
+    "build:sass": "node-sass --source-map true --output-style compressed static/sass -o dist/css",
+    "start": "npm run build:sass"
+  },
+  "author": "Nathan Jewsbury",
+  "devDependencies": {
+    "del-cli": "3.0.1",
+    "mkdirp": "1.0.4",
+    "node-sass": "4.14.1",
+    "stylelint": "13.5.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "5.13.0",
+    "bootstrap": "4.5.0",
+    "paper-css": "0.4.1"
+  }
+}

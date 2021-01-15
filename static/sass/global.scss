@@ -1,0 +1,65 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import 'theme-variables.scss';
+
+.resume-wrapper.border {
+    border-width: 3px !important;
+}
+
+.thin-line {
+    height: 1px !important;
+}
+
+.skills-col-dev:after {
+    content: "";
+    background: $primary;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 80%;
+    width: 1px;
+}
+
+.list-element {
+    margin-left: 1rem;
+
+    &:before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f105";
+        color: $text-muted;
+        margin-right: .5rem;
+        position: relative;
+        top: 0;
+    }
+}
+
+.dot-column {
+    font-size: 0.5rem;
+    max-width: 6%;
+}
+
+.dot-column span.fas {
+    margin-top: 10px;
+}
+
+.dot-column.connector:before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+
+    width: 1px;
+    background: $secondary;
+
+    left: 21px;
+    margin: 0;
+}
+
+.dot-column.connector.top:before {
+    top: 15px;
+}
+
+.dot-column.connector.bottom:before {
+    bottom: calc(100% - 15px);
+}

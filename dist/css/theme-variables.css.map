@@ -1,0 +1,11 @@
+{
+	"version": 3,
+	"file": "theme-variables.css",
+	"sources": [
+		"../../static/sass/theme-variables.scss",
+		"../../node_modules/bootstrap/scss/_functions.scss",
+		"../../node_modules/bootstrap/scss/_variables.scss"
+	],
+	"names": [],
+	"mappings": ""
+}
